@@ -24,7 +24,8 @@ gem 'puma', '~> 3.0'
 gem 'active_model_serializers'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
-
+gem 'omniauth'
+gem 'devise_token_auth'
 gem 'kaminari'
 
 group :development, :test do

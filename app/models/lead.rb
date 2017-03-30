@@ -1,5 +1,5 @@
 class Lead < ApplicationRecord
-  belongs_to :user
+  belongs_to :user, dependent: :destroy
 
-  validates_presence_of :first_name, :last_name, :lead_owner, :email
+  validates_presence_of :first_name, :last_name, :email, :lead_owner
 end
